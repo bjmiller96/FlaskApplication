@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container text-white text-center pt-5 mt-5">
+    <h1 class="display-3 pt-5 mt-5 pb-5 mt-5">Library User Profile: {{ current_user.email }}</h1>
+    <ul class="list-unstyled">
+        <li class="fs-3 mb-3 pb-3">Email: {{ current_user.email }}</li>
+        <li class="fs-3">Token: {{ current_user.token }}</li>
+    </ul>
+</div>    
+{% endblock %}
