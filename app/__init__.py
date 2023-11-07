@@ -10,6 +10,7 @@ from flask_cors import CORS
 from helpers import JSONEncoder
 
 app = Flask(__name__)
+CORS(app)
 
 app.register_blueprint(site)
 app.register_blueprint(auth)
